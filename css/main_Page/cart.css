@@ -1,0 +1,134 @@
+    /*WISHLIST*/
+    
+    .carts {
+        background-color: rgba(255, 255, 255, 0.274);
+        width: 900px;
+        height: max-content;
+        transform: scale(0);
+        margin: 0px;
+        z-index: 1;
+    }
+    
+    .carts.active {
+        transform: scale(1);
+    }
+    
+    .cartTitle {
+        text-align: center;
+    }
+    
+    .cartProduct {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+        width: 200px;
+        background: transparent;
+        margin: 0px 60px;
+    }
+    
+    .movieContent {
+        background-color: blueviolet;
+        width: max-content;
+        height: max-content;
+    }
+    
+    .movieBox {
+        display: flex;
+        padding: 5px 20px;
+        background-color: blueviolet;
+        width: max-content;
+        height: max-content;
+        border-radius: 20px;
+    }
+    
+    .movieBox img {
+        width: 60px;
+    }
+    
+    .movieBox .movieProductTitle {
+        text-align: center;
+        background-color: aqua;
+        width: max-content;
+    }
+    
+    .moviePrice {
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 15px 0px;
+    }
+    
+    .btmMovieDetail {
+        display: flex
+    }
+    
+    #number {
+        background: none;
+        border: none;
+    }
+    
+    .wishlistBtn.active {
+        transform: scale(2);
+    }
+    
+    .wishlistBtn img {
+        border-radius: 100%;
+    }
+    /*WISHLIST*/
+    
+    @media only screen and (max-width: 800px) {
+        .carts {
+            background-color: rgba(255, 255, 255, 0.274);
+            width: 600px;
+            height: max-content;
+            transform: scale(0);
+            margin: 0px;
+        }
+        .cartProduct {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            width: 200px;
+            background: transparent;
+            margin: 0px 60px;
+        }
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .carts {
+            background-color: rgba(255, 255, 255, 0.274);
+            width: 600px;
+            height: max-content;
+            transform: scale(0);
+            margin: 0px;
+        }
+        .cartProduct {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            width: 200px;
+            background: transparent;
+            margin: 0px 60px;
+        }
+    }
+    
+    @media only screen and (max-width: 400px) {
+        .carts {
+            background-color: rgba(255, 255, 255, 0.274);
+            width: 140px;
+            height: max-content;
+            transform: scale(0);
+            margin: auto;
+        }
+        .cartProduct {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            width: 200px;
+            background: transparent;
+            margin: 0px 60px;
+        }
+    }

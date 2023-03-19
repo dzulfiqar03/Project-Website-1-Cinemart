@@ -1,0 +1,573 @@
+    /*MAIN MENU*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .navBar {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .navBar .navSection {
+        display: flex;
+        background-color: rgb(14, 14, 14);
+        padding: 0px 80px;
+        justify-content: space-between;
+    }
+    
+    .navSection .Logo {
+        margin: 20px 0px;
+    }
+    
+    .navSection .Logo h1 {
+        text-shadow: 2px #ffffff;
+        border: 2px white;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+    
+    .navMenu .navMenuSection {
+        display: flex;
+        list-style: none;
+        margin: 20px 0px;
+    }
+    
+    .navMenu .navMenuSection li {
+        color: white;
+        padding: 0px 40px;
+        font-size: large;
+    }
+    
+    .navMenu .navMenuSection li:hover {
+        transform: scale(110%);
+        background-color: rgb(58, 66, 66);
+    }
+    
+    .navMenu .navMenuSection li a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navMenu .navMenuSection img {
+        width: 20px;
+    }
+    
+    .allContent {
+        transform: scale(0);
+        width: 1365px;
+    }
+    /*Main Menu*/
+    
+    .scrollMovie {
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+    }
+    
+    .moviePlaylist {
+        width: max-content;
+        height: max-content;
+    }
+    
+    .imageList {
+        height: max-content;
+        width: max-content;
+        padding: 30px;
+        display: flex;
+        gap: 0px 80px;
+    }
+    
+    .imageList span {
+        width: 1305px;
+        background-size: cover;
+        border-radius: 100px;
+    }
+    
+    .imageList span:nth-child(1) {
+        background-image: url("/assets/imagePlaylist1.jpg");
+    }
+    
+    .imageList span:nth-child(2) {
+        background-image: url("/assets/imagePlaylist2.jpg");
+    }
+    
+    .imageList span:nth-child(3) {
+        background-image: url("/assets/imagePlaylist3.jpg");
+    }
+    
+    .detailImgPlaylist {
+        background-color: #00000033;
+        color: white;
+        width: 1305px;
+        height: 100%;
+        border-radius: 100px;
+    }
+    
+    .detailImgCont {
+        padding: 110px 20px;
+    }
+    
+    .bottomDetailImg {
+        display: grid;
+        grid-gap: 20px;
+    }
+    
+    .btnPlayImg button {
+        padding: 0px 40px;
+        background-color: rgb(179, 4, 4);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        border: 0.2px solid white;
+    }
+    
+    .btnPlayImg button:hover {
+        transform: scale(110%);
+    }
+    
+    .listButton {
+        height: max-content;
+        width: max-content;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .listBtnBody {
+        display: flex;
+        gap: 0px 10px;
+    }
+    
+    .listButton span {
+        border-radius: 100%;
+        border: 2px solid white;
+        width: max-content;
+        height: max-content;
+    }
+    
+    .listButton span:nth-child(1) {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    
+    .listButton span:nth-child(2) {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+    .listButton span:nth-child(3) {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        cursor: pointer;
+    }
+    
+    .listButton .btn1.active {
+        transform: scale(1.2);
+        background: black;
+    }
+    
+    .listButton .btn2.active {
+        transform: scale(1.2);
+        background-color: white;
+    }
+    
+    .listButton .btn3.active {
+        transform: scale(1.2);
+        background-color: white;
+    }
+    /*MOVIE*/
+    
+    .Movie {
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+    }
+    
+    .Movie .movieSection {
+        margin: 40px 130px;
+    }
+    
+    .linkCont {
+        margin: 0px 35px;
+        padding: 20px 0px;
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .linkContSect {
+        cursor: pointer;
+        padding: 11px 20px;
+    }
+    
+    .linkCont a {
+        background-color: rgb(179, 4, 4);
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        width: max-content;
+        padding: 10px 40px;
+        border: 2px solid rgba(255, 255, 255, 0.274);
+    }
+    
+    .linkCont a:hover {
+        background-color: #000000;
+        color: rgb(179, 4, 4);
+        transform: scale(110%);
+    }
+    
+    a.nowPlayingBtn.active {
+        background-color: rgb(179, 4, 4);
+        color: #000000;
+        transform: scale(110%);
+    }
+    
+    a.olderMoviesBtn.active {
+        background-color: rgb(179, 4, 4);
+        color: #000000;
+        transform: scale(110%);
+    }
+    
+    a.onThisWeekBtn.active {
+        background-color: rgb(179, 4, 4);
+        color: #000000;
+        transform: scale(110%);
+    }
+    
+    a.comingSoonBtn.active {
+        background-color: rgb(179, 4, 4);
+        color: #000000;
+        transform: scale(110%);
+    }
+    
+    .linkCont .search .searchInp {
+        display: flex;
+        height: max-content;
+        width: max-content;
+    }
+    
+    .linkCont .search .searchInp input {
+        width: 180px;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgba(255, 255, 255, 0.322);
+    }
+    
+    .linkCont .search .searchInp button {
+        padding: 0px 20px;
+        background-color: #8b0000;
+        color: white;
+        border: 2px solid rgba(255, 255, 255, 0.322);
+        cursor: pointer;
+    }
+    
+    .linkCont .search .searchInp button:hover {
+        transform: scale(110%);
+    }
+    /*MOVIE CONTAINER*/
+    
+    .movieBody {
+        display: flex;
+    }
+    
+    .nowPlayingMovie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 30px;
+        padding: 0px 20px;
+        margin: 0px 15px;
+        z-index: 1;
+    }
+    
+    .nowPlayingMovie.active {
+        opacity: 60%;
+        transition: 3s all ease-in-out;
+    }
+    
+    .olderMoviesMovie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 20px;
+        padding: 0px 20px;
+        margin: 0px 150px;
+    }
+    
+    .olderMoviesMovie.active {
+        opacity: 60%;
+        transition: 3s all ease-in-out;
+    }
+    
+    .onThisWeekMovie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 20px;
+        padding: 0px 20px;
+        margin: 0px 25px;
+    }
+    
+    .onThisWeekMovie.active {
+        opacity: 60%;
+        transition: 3s all ease-in-out;
+    }
+    
+    .comingSoonMovie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 20px 20px;
+        padding: 0px 20px;
+        margin: 0px 160px;
+    }
+    
+    .comingSoonMovie.active {
+        opacity: 60%;
+        transition: 3s all ease-in-out;
+    }
+    
+    .contentSection {
+        background-color: rgb(0, 0, 0);
+        width: max-content;
+        color: white;
+        box-shadow: 2px 2px 2px 2px black;
+        border-radius: 20px;
+    }
+    
+    .contentSection:hover {
+        transform: scale(1.02);
+    }
+    
+    .contentSection .imageContent img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 180px;
+        height: 270px;
+    }
+    
+    .contentSection .imageContent img:hover {
+        opacity: 40%;
+        transition: 3s;
+        cursor: pointer;
+    }
+    
+    .imgTitle {
+        text-align: center;
+    }
+    
+    .detailImage {
+        position: absolute;
+        margin: -220px 20px;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: -1;
+    }
+    
+    .sinopsys {
+        text-align: center;
+    }
+    
+    .contentSection .title {
+        text-align: center;
+        padding: 10px 0px;
+    }
+    
+    .contentSection .title h1 {
+        font-size: 2.3vh;
+    }
+    
+    .contentSection .sideContainer {
+        display: flex;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.253);
+        margin: -320px 0px;
+        width: 177px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .contentSection .sideContainer .duration img {
+        width: 29px;
+        height: 15px;
+    }
+    
+    .contentSection .sideContainer .timer h1 {
+        color: white;
+        font-size: medium;
+    }
+    
+    .contentSection .sideContainer .addToCartBtn img {
+        width: 29px;
+        height: 30px;
+        margin: 0px 60px;
+        position: absolute;
+    }
+    
+    .contentSection .sideContainer .addToCartBtn img:hover {
+        transform: scale(110%);
+        cursor: pointer;
+    }
+    
+    .contentSection .sideContainer .addToCartBtn h1 {
+        color: white;
+        font-size: medium;
+    }
+    
+    .contentSection .bottomContainer {
+        background-color: rgb(39, 48, 48);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .contentSection .bottomContainer .bottomSection {
+        display: flex;
+        margin: 0px 7px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .contentSection .bottomContainer .downloadButton img {
+        width: 40px;
+        height: 40px;
+        padding: 0px 5px;
+    }
+    
+    .contentSection .bottomContainer .watchNowBtn {
+        font-size: 1.3vh;
+        background-color: rgb(45, 45, 49);
+        padding: 0px 13px;
+        border-bottom-right-radius: 20px;
+        margin: 8px 0px;
+    }
+    /*MOVIE CONTAINER*/
+    /*MOVIE*/
+    /*FOOTER*/
+    
+    .Footer .listNumber {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .Footer .listNumber ul {
+        display: flex;
+    }
+    
+    .Footer .listNumber ul li {
+        justify-content: space-between;
+        border: 1px 2px 2px 8px rgb(221, 47, 47);
+        background-color: #8b0000;
+        list-style: none;
+        box-shadow: 1px 2px 8px rgba(255, 255, 255, 0.575);
+    }
+    
+    .Footer .listNumber ul li a {
+        justify-content: space-between;
+        margin: 0px 10px 20px;
+        color: #ffffff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .Footer .listNumber ul li:hover {
+        transform: scale(1.1);
+    }
+    
+    .Footer {
+        padding: 0px 0px;
+    }
+    
+    .Footer p {
+        text-align: center;
+        padding: 10px;
+        color: wheat;
+        font-weight: 100;
+        background-color: #8b0000;
+    }
+    
+    .contactSupport {
+        background-color: rgba(14, 14, 14, 0.411);
+        border: none;
+        color: white;
+    }
+    
+    .contactSupportSect {
+        padding: 20px;
+        display: flex;
+    }
+    
+    .contactSupportSect .title {
+        font-size: 3vh;
+        margin: auto;
+        background-color: rgb(167, 0, 0);
+        padding: 40px 20px;
+        border-radius: 100px;
+        border: 2px solid rgb(17, 17, 17);
+    }
+    
+    .contactSupportSect .formCs {
+        font-size: 1vh;
+        font-weight: bold;
+        width: max-content;
+        margin: auto;
+    }
+    
+    .formCsCont form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    
+    form .fullNameInp {
+        width: 400px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.295);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    form .emailInp {
+        width: 400px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0.295);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    form .buttonCs button {
+        width: 400px;
+        height: 30px;
+        background-color: rgba(255, 0, 0, 0.534);
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+    
+    form .buttonCs button:hover {
+        border-radius: 0px;
+        background-color: black;
+        color: rgb(179, 4, 4);
+        transform: scale(110%);
+        cursor: pointer;
+        transition: 2s all ease-in-out;
+    }
+    /*FOOTER*/

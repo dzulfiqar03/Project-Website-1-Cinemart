@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/main_Page/main_Page.css">
+    <link rel="stylesheet" type="text/css" href="/css/main_Page/cart.css">
+    <link rel="stylesheet" type="text/css" href="/css/main_Page/respDesignMode.css">
+    <link rel="stylesheet" type="text/css" href="/css/main_Page/movieDetail.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navBar">
+            <div class="navSection">
+                <div class="Logo">
+                    <h1>Cinemart</h1>
+                </div>
+                <div class="navMenu">
+                    <div class="navMenuSection">
+                        <li><a href="#pertama" onclick="return smoothScroll('pertama')">Home</a></li>
+                        <li><a href="#kedua" class="mainMenuBtn" onclick="return smoothScroll('kedua')">Main Menu</a></li>
+                        <li><a href="#ketiga" class="contactSupportBtn" onclick="return smoothScroll('ketiga')">Contact Support</a></li>
+                        <li>
+                            <a href="#"><img src="/assets/Profil.png" alt="" srcset=""></a>
+                        </li>
+                        <li>
+                            <p class="wishlistBtn"><img src="/assets/cart.png" alt="" srcset=""></p>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="scrollMovie" id="pertama">
+        <div class="moviePlaylist">
+            <div class="imageList">
+                <span class="image1" id="imageList1">
+
+                    <div class="detailImgPlaylist" >
+
+                        <div class="detailImgCont">
+                                                    <div class="titleMovie1">
+                            <h1>Maleficent <br> Mistress Of Evil</h1>
+                        </div>
+
+                        <div class="bottomDetailImg">
+                            <div class="yearRealese">
+                                <h3>16 Oct 2019</h3>
+                            </div>
+                            <div class="sinopsysPlayList">
+                                <p>Maleficent (Angelina Jolie) and her adopted daughter Aurora (Elle Fanning) begin to feud and can destroy...</p>
+                            </div>
+                            <div class="buttonImage">
+                                <div class="btnPlayImg">
+                                    <button>Play</button>
+                                    <button>Buy</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        </div>
+
+                    </div>
+                </span>
+
+                <span class="image2" id="imageList2">
+
+                    <div class="detailImgPlaylist" >
+
+                        <div class="detailImgCont">
+                                                    <div class="titleMovie1">
+                            <h1>Avengers <br> EndGame</h1>
+                        </div>
+
+                        <div class="bottomDetailImg">
+                            <div class="yearRealese">
+                                <h3>24 April 2019</h3>
+                            </div>
+                            <div class="sinopsysPlayList">
+                                <p>Continuing Avengers Infinity War, where the incident after Thanos managed to get all the infinity stones ...</p>
+                            </div>
+                            <div class="buttonImage">
+                                <div class="btnPlayImg">
+                                    <button>Play</button>
+                                    <button>Buy</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+
+
+                    </div>
+                </span>
+
+                <span class="image3" id="imageList3">
+
+                    <div class="detailImgPlaylist" >
+
+                        <div class="detailImgCont">
+                                                    <div class="titleMovie1">
+                            <h1>Marvels <br> Black Panther</h1>
+                        </div>
+
+                        <div class="bottomDetailImg">
+                            <div class="yearRealese">
+                                <h3>14 February 2018</h3>
+                            </div>
+                            <div class="sinopsysPlayList">
+                                <p>As the new King of Wakanda, T'Challa (Chadwick Boseman) is still struggling with his feelings so very ...</p>
+                            </div>
+                            <div class="buttonImage">
+                                <div class="btnPlayImg">
+                                    <button>Play</button>
+                                    <button>Buy</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    </div>
+                </span>
+
+
+            </div>
+        </div>
+
+        <div class="listButton">
+            <div class="listBtnBody">
+                <span class="btn1"></span>
+                <span class="btn2"></span>
+                <span class="btn3"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Movie" id="kedua">
+        <div class="movieSection">
+            <div class="linkCont">
+                <div class="linkContSect">
+                    <a class="nowPlayingBtn">Now Playing</a>
+                    <a class="olderMoviesBtn">Older Movies</a>
+                    <a class="onThisWeekBtn">On This Year</a>
+                    <a class="comingSoonBtn">Coming Soon</a>
+
+                </div>
+                <div class="search">
+                    <div class="searchInp">
+                        <form action="" method="post">
+                            <input type="search" name="Search" id="search" placeholder="Search Your Film Here">
+                        </form>
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="movieBody">
+
+                <div class="nowPlayingMovie">
+                </div>
+
+
+
+
+
+                <div class="olderMoviesMovie"></div>
+
+                <div class="onThisWeekMovie"></div>
+
+                <div class="comingSoonMovie"></div>
+
+                <div class="carts">
+                    <div class="cartsBody">
+                        <div class="cartTitle">
+                            <h1>Your Cart</h1>
+                        </div>
+                        <div class="cartProduct"></div>
+                    </div>
+                </div>
+
+                <div class="movieClick">
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <div class="movies" id="movies"></div>
+    <div class="movPlay" id="movPlay">
+
+        <div class="Footer" id="ketiga">
+            <div class="listNumber">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">>></a></li>
+
+
+                </ul>
+            </div>
+
+            <div class="contactSupport">
+                <div class="contactSupportSect">
+                    <div class="title">
+                        <h1>Contact</h1>
+                        <h1>Support</h1>
+                    </div>
+                    <div class="formCs">
+                        <div class="formCsCont">
+                            <form action="" method="post">
+                                <div class="fullNameTitleCs" id="fullNameTitleCs">
+                                    <h1>Full Name</h1>
+                                </div>
+                                <div class="fullNameCs" id="fullNameCs">
+
+                                    <input class="fullNameInp" type="text" name="Full Name" id="fullNameInp" placeholder="Enter Your Full Name Here">
+
+                                </div>
+
+                                <div class="emailTitleCs" id="emailTitleCs">
+                                    <h1>Email</h1>
+                                </div>
+                                <div class="emailCs" id="emailCs">
+
+                                    <input class="emailInp" type="email" name="Email" id="emailInp" placeholder="Enter Your Email Here">
+
+                                </div>
+
+                                <div class="buttonCs">
+                                    <div class="buttonCsCont">
+                                        <button type="submit">Submit</button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <p>Copyright @2022</p>
+
+        </div>
+
+
+        <style>
+
+        </style>
+        <script src="/js/main_Page.js"></script>
+</body>
+
+</html>

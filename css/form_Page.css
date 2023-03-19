@@ -1,0 +1,319 @@
+/*LOGIN PAGE*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(87, 18, 18);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    .logo {
+        left: -450px;
+        top: 150px;
+        position: absolute;
+        transform: scale(0.7);
+    }
+    .logo:hover {
+        text-shadow: 2px 0px 10px white, 0px 2px 12px white;
+        transition: 3s all ease-in-out;
+        transform: scale(0);
+    }
+    .allContentForm {
+        top: auto;
+        left: -275px;
+        position: absolute;
+    }
+    .contentlgnBody {
+        display: flex;
+        width: max-content;
+        height: max-content;
+        justify-content: center;
+        position: absolute;
+        transform: scale(0.9);
+    }
+    .bodyinpLgn {
+        background-color: red;
+        height: max-content;
+        padding: 52px 20px;
+        border-radius: 20px;
+    }
+    .sideimgLgn {
+        display: none;
+    }
+    .bodyinpReg {
+        background-color: red;
+        height: max-content;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    .sideimgReg {
+        display: none;
+    }
+    .nowPlayingMovie {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px 20px;
+        margin: 0px 5px;
+        z-index: 1;
+    }
+}
+
+.logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    display: flex;
+    margin: 130px 400px;
+    text-align: center;
+    width: max-content;
+    height: max-content;
+    font-weight: bold;
+    color: white;
+    font-size: 5rem;
+    text-shadow: 2px 0px 10px black, 0px 2px 12px black;
+    cursor: pointer;
+    transition: 3s all ease-in-out;
+}
+
+.logo #icon {
+    width: 200px;
+    height: 200px;
+    margin: 0px -20px;
+    z-index: 1;
+}
+
+.logo:hover {
+    text-shadow: 2px 0px 10px white, 0px 2px 12px white;
+    transition: 3s all ease-in-out;
+    transform: scale(2);
+}
+
+.logo .downLogo {
+    animation: rotate 2s infinite 2s;
+    color: red;
+    animation: rotate 3s infinite 2s iteration-count direction fill-mode;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(45deg) translateY(42px) translateX(37px);
+    }
+}
+
+.allContentForm {
+    width: max-content;
+    height: max-content;
+    margin: 70px 340px;
+    transform: scale(0);
+}
+
+.contentlgnBody {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    position: absolute;
+}
+
+.bodyinpLgn {
+    background-color: red;
+    height: max-content;
+    padding: 52px 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.emailInpLgn {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+    border-radius: 5px;
+}
+
+.validationEmailLgn {
+    position: absolute;
+    margin: -2px 0px;
+}
+
+.passInpLgn {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+    border-radius: 5px;
+}
+
+.validationPassLgn {
+    position: absolute;
+    margin: -5px 0px;
+}
+
+.submitLgn {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(114, 5, 5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.buttonSection {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.buttonSection .lgnAsGstBtn {
+    background-color: rgb(77, 27, 27);
+    text-align: center;
+    color: white;
+}
+
+.buttonSection .lgnAsGstBtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonSection .lgnAsGstBtn:hover {
+    transform: scale(110%);
+}
+
+.sideimgLgn img {
+    width: max-content;
+    height: 524px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Register {
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    margin: 0px 30px;
+    transform: scale(0.9);
+}
+
+.registBtn {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.registBtn:hover {
+    transform: scale(110%);
+}
+
+.contentregBody {
+    display: flex;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    transform: scale(0);
+    transition: 3s all ease-in-out;
+}
+
+.bodyinpReg {
+    background-color: red;
+    height: max-content;
+    padding: 10px 20px;
+    border-bottom-Right-radius: 20px;
+    border-top-Right-radius: 20px;
+}
+
+.titleReg {
+    text-align: center;
+    font-size: 3vh;
+}
+
+.fullNameInpReg {
+    width: 330px;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+    border-radius: 5px;
+}
+
+.validationFullNameReg {
+    position: absolute;
+    margin: -3px 0px;
+}
+
+.emailInpReg {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+    border-radius: 5px;
+}
+
+.validationEmailReg {
+    position: absolute;
+    margin: -3px 0px;
+}
+
+.passInpReg {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+    border-radius: 5px;
+}
+
+.validationPassReg {
+    position: absolute;
+    margin: -3px 0px;
+}
+
+.rePassInpReg {
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 255, 255, 0.178);
+    border: none;
+    border-radius: 5px;
+}
+
+.validationConfirmPassReg {
+    position: absolute;
+    margin: -2px 0px;
+}
+
+.submit {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(114, 5, 5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.sideimgReg img {
+    width: max-content;
+    height: 524px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.submitReg {
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(114, 5, 5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+
+/*LOGIN PAGE*/

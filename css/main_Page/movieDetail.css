@@ -1,0 +1,100 @@
+.movieClick {
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    height: max-content;
+    transform: scale(0);
+    margin: -220px -255px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+
+.leftCont {
+    align-content: center;
+    justify-content: center;
+    background-color: brown;
+    padding: 5px;
+    color: white;
+}
+
+.leftCont h1 {
+    font-size: large;
+}
+
+.movChld1 {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.movieChld1 {
+    width: 170px;
+    height: 250px;
+    border: 20px solid black;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.descCont {
+    display: grid;
+    gap: 10px;
+    width: 300px;
+    height: max-content;
+    margin: auto;
+    justify-content: center;
+    transform: scale(1.2);
+    text-transform: capitalize;
+    font-size: smaller;
+}
+
+.descAct {
+    transform: scale(2);
+    font-weight: bold;
+    text-transform: capitalize;
+    width: max-content;
+}
+
+.Actris {
+    margin: auto;
+}
+
+.actImg {
+    display: flex;
+    gap: 10px;
+}
+
+.actImg img {
+    border-radius: 100%;
+    border: 2px solid brown;
+    width: 50px;
+}
+
+.act1 {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+
+.act1 h2 {
+    margin: auto;
+}
+
+.act2 {
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+
+.act2 h2 {
+    margin: auto;
+}
+
+.btnPlay {
+    width: max-content;
+    height: max-content;
+}
